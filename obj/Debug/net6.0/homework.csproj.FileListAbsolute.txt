@@ -1,0 +1,15 @@
+J:\УЧЕБА ГИК БРЕЙНС\languages\sevenseminar\homework\bin\Debug\net6.0\homework.exe
+J:\УЧЕБА ГИК БРЕЙНС\languages\sevenseminar\homework\bin\Debug\net6.0\homework.deps.json
+J:\УЧЕБА ГИК БРЕЙНС\languages\sevenseminar\homework\bin\Debug\net6.0\homework.runtimeconfig.json
+J:\УЧЕБА ГИК БРЕЙНС\languages\sevenseminar\homework\bin\Debug\net6.0\homework.dll
+J:\УЧЕБА ГИК БРЕЙНС\languages\sevenseminar\homework\bin\Debug\net6.0\homework.pdb
+J:\УЧЕБА ГИК БРЕЙНС\languages\sevenseminar\homework\obj\Debug\net6.0\homework.csproj.AssemblyReference.cache
+J:\УЧЕБА ГИК БРЕЙНС\languages\sevenseminar\homework\obj\Debug\net6.0\homework.GeneratedMSBuildEditorConfig.editorconfig
+J:\УЧЕБА ГИК БРЕЙНС\languages\sevenseminar\homework\obj\Debug\net6.0\homework.AssemblyInfoInputs.cache
+J:\УЧЕБА ГИК БРЕЙНС\languages\sevenseminar\homework\obj\Debug\net6.0\homework.AssemblyInfo.cs
+J:\УЧЕБА ГИК БРЕЙНС\languages\sevenseminar\homework\obj\Debug\net6.0\homework.csproj.CoreCompileInputs.cache
+J:\УЧЕБА ГИК БРЕЙНС\languages\sevenseminar\homework\obj\Debug\net6.0\homework.dll
+J:\УЧЕБА ГИК БРЕЙНС\languages\sevenseminar\homework\obj\Debug\net6.0\refint\homework.dll
+J:\УЧЕБА ГИК БРЕЙНС\languages\sevenseminar\homework\obj\Debug\net6.0\homework.pdb
+J:\УЧЕБА ГИК БРЕЙНС\languages\sevenseminar\homework\obj\Debug\net6.0\homework.genruntimeconfig.cache
+J:\УЧЕБА ГИК БРЕЙНС\languages\sevenseminar\homework\obj\Debug\net6.0\ref\homework.dll
