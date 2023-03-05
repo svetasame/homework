@@ -107,7 +107,7 @@ CheckNumberinArray (num, array);
 int m = Prompt ("Введите количество строк");
 int n = Prompt ("Введите количество столбцов");
 double [,] array = GenerateTwoArray (m, n);
-double [ ] newarray = AverageArrayColumns (array);
+double [] newarray = AverageArrayColumns (array);
 System.Console.WriteLine();
 System.Console.WriteLine("Среднее арифметическое стобцов:");
 PrintArray (newarray);
