@@ -5,9 +5,9 @@ int result = Convert.ToInt32(Console.ReadLine());
 return result;
 }
 
-int [,] GenerateTwoArray (int rows, int columns)
+double [,] GenerateTwoArray (int rows, int columns)
 {
-int [,] matrix = new int [rows,columns];
+double [,] matrix = new double [rows,columns];
 for (int i = 0; i < matrix.GetLength(0); i++) 
 { 
     System.Console.WriteLine();
@@ -20,7 +20,7 @@ for (int i = 0; i < matrix.GetLength(0); i++)
 return matrix;
 }
 
-void CheckNumberinArray(int number, int[,] array)
+void CheckNumberinArray(double number, double [,] array)
 {
   int count = 0;
   for (int i = 0; i < array.GetLength(0); i++)
@@ -40,6 +40,28 @@ void CheckNumberinArray(int number, int[,] array)
     System.Console.WriteLine
     (number + " такого числа в массиве нет");
   }
+}
+
+double[] AverageArrayColumns(double[,] array)
+{
+  int rows = array.GetLength(0);
+  int cols = array.GetLength(1);
+  double[] sums = new double[cols];
+  for (int j = 0; j < cols; j++)
+  {
+    double sum = 0;
+    for (int i = 0; i < rows; i++)
+    {
+      sum += array[i, j];
+    }
+    sums[j] = Math.Round((sum / rows) * 1, 2);
+  }
+  return sums;
+}
+
+void PrintArray (double [] array)
+{
+  System.Console.WriteLine(String.Join(" ", array));
 }
 
 //задача 47 
@@ -62,10 +84,29 @@ void CheckNumberinArray(int number, int[,] array)
 // 5 9 2 3
 // 8 4 2 4
 // 17 -> такого числа в массиве нет
+
+// int m = Prompt ("Введите количество строк");
+// int n = Prompt ("Введите количество столбцов");
+// double [,] array = GenerateTwoArray (m, n);
+// System.Console.WriteLine();
+// System.Console.WriteLine();
+// int num = Prompt ("Введите число для проверки");
+// CheckNumberinArray (num, array);
+
+
+// Задача 52. Задайте двумерный массив из целых чисел. 
+// Найдите среднее арифметическое элементов в каждом столбце.
+// Например, задан массив:
+// 1 4 7 2
+// 5 9 2 3
+// 8 4 2 4
+// Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 int m = Prompt ("Введите количество строк");
 int n = Prompt ("Введите количество столбцов");
-int [,] array = GenerateTwoArray (m, n);
+double [,] array = GenerateTwoArray (m, n);
+double [ ] newarray = AverageArrayColumns (array);
 System.Console.WriteLine();
-System.Console.WriteLine();
-int num = Prompt ("Введите число для проверки");
-CheckNumberinArray (num, array);
+System.Console.WriteLine("Среднее арифметическое стобцов:");
+PrintArray (newarray);
+
+
