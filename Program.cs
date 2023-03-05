@@ -46,7 +46,7 @@ double[] AverageArrayColumns(double[,] array)
 {
   int rows = array.GetLength(0);
   int cols = array.GetLength(1);
-  double[] sums = new double[cols];
+  double[] ave = new double[cols];
   for (int j = 0; j < cols; j++)
   {
     double sum = 0;
@@ -54,9 +54,9 @@ double[] AverageArrayColumns(double[,] array)
     {
       sum += array[i, j];
     }
-    sums[j] = Math.Round((sum / rows) * 1, 2);
+    ave[j] = Math.Round((sum / rows) * 1, 2);
   }
-  return sums;
+  return ave;
 }
 
 void PrintArray (double [] array)
@@ -71,9 +71,11 @@ void PrintArray (double [] array)
 // 0,5 7 -2 -0,2
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
-// int m = Prompt ("Введите количество строк");
-// int n = Prompt ("Введите количество столбцов");
-// int [,] array = GenerateTwoArray (m, n);
+
+int m = Prompt ("Введите количество строк");
+int n = Prompt ("Введите количество столбцов");
+int [,] array = GenerateTwoArray (m, n);
+
 
 // задача 50 
 //Напишите программу, которая на вход принимает 
@@ -85,13 +87,13 @@ void PrintArray (double [] array)
 // 8 4 2 4
 // 17 -> такого числа в массиве нет
 
-// int m = Prompt ("Введите количество строк");
-// int n = Prompt ("Введите количество столбцов");
-// double [,] array = GenerateTwoArray (m, n);
-// System.Console.WriteLine();
-// System.Console.WriteLine();
-// int num = Prompt ("Введите число для проверки");
-// CheckNumberinArray (num, array);
+int m = Prompt ("Введите количество строк");
+int n = Prompt ("Введите количество столбцов");
+double [,] array = GenerateTwoArray (m, n);
+System.Console.WriteLine();
+System.Console.WriteLine();
+int num = Prompt ("Введите число для проверки");
+CheckNumberinArray (num, array);
 
 
 // Задача 52. Задайте двумерный массив из целых чисел. 
@@ -101,6 +103,7 @@ void PrintArray (double [] array)
 // 5 9 2 3
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
+
 int m = Prompt ("Введите количество строк");
 int n = Prompt ("Введите количество столбцов");
 double [,] array = GenerateTwoArray (m, n);
